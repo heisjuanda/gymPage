@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&display=swap');
+
+.fondo{
+  z-index: 1;
+  background-color: wheat;
+  height: 25vw;
+  width: 25vw;
+  transform: translate(36vw,12vw) rotateX(0deg) rotateY(0deg) rotateZ(10deg) skewX(5deg);
+  //animation: rotate1 40s infinite linear;
+  opacity: 0.5;
+  margin-top: 5%;
+}
+.sectionFooter{
+  .fotoJuanda{grid-area: foto;}
+  .nombreJuanda{grid-area: nombre;}
+  .socialMediaJuanda{grid-area: redes;}
+  .footer{
+    display: grid;
+    grid-template-areas:
+    'foto '
+    'nombre '
+    'redes '
+    ;
+    .fotoJuanda{
+      //z-index: 2;
+      text-align: center;
+      //background-color: rosybrown;
+      height: 31.3vw;
+     img{
+      //z-index: 1;
+      width: 23vw;
+      -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      //border-radius: 25%;
+      animation: rotate1 20s linear forwards infinite;
+      }
+     margin-top: 5%;
+    }
+    .nombreJuanda{
+      z-index: 1;
+      text-align: center;
+      h4{
+        opacity: 0.7;
+        transition: 0.5s;
+        font-size: 2vw;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        span{
+          hr{
+            width: 20vw;
+            animation: opacidad 0.3s;
+            animation-direction: reverse;
+            opacity: 0;
+          }
+        }
+      }
+      h4:hover{
+          opacity: 1;
+        span{
+          hr{
+            animation: crecerAncho3 0.3s ;
+            opacity: 1;
+          }
+        }
+      }
+      width: 25vw;
+    }
+    .socialMediaJuanda{
+      text-align: center;
+      p{
+        opacity: 0.7;
+        transition: 0.5s;
+        font-size: 1vw;
+        a{
+          text-decoration: none;
+          color: white;
+        }
+        span{
+          hr{
+            opacity: 0;
+            animation: opacidad 0.3s;
+            animation-direction: reverse;
+            width: 7vw;
+          }
+        }
+        font-family: 'Noto Sans Warang Citi', sans-serif;
+      }
+      p:hover{
+        opacity: 1;
+        span{
+          hr{
+            animation: crecerAncho4 0.3s;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    align-items: center;
+    justify-content: center;
+    transform: translateY(5vw);
+  }
+  text-align: center;
+  background-color: black;
+  height: 60vw;
+}
+@keyframes rotate1 {
+  0%{
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }10%{
+    -webkit-clip-path: polygon(58% 0, 100% 58%, 43% 100%, 0 44%);
+    clip-path: polygon(58% 0, 100% 58%, 43% 100%, 0 44%);
+  }20%{
+    -webkit-clip-path: polygon(66% 0, 100% 68%, 32% 100%, 0 36%);
+    clip-path: polygon(66% 0, 100% 68%, 32% 100%, 0 36%);
+  }30%{
+    -webkit-clip-path: polygon(75% 0, 100% 80%, 22% 100%, 0 26%);
+    clip-path: polygon(75% 0, 100% 80%, 22% 100%, 0 26%);
+  }40%{
+    -webkit-clip-path: polygon(87% 0, 100% 89%, 10% 100%, 0 14%);
+    clip-path: polygon(87% 0, 100% 89%, 10% 100%, 0 14%);
+  }50%{
+    -webkit-clip-path: polygon(100% 9%, 94% 100%, 0 89%, 6% 0);
+    clip-path: polygon(100% 9%, 94% 100%, 0 89%, 6% 0);
+  }60%{
+    -webkit-clip-path: polygon(87% 0, 100% 89%, 10% 100%, 0 14%);
+    clip-path: polygon(87% 0, 100% 89%, 10% 100%, 0 14%);
+  }70%{
+    -webkit-clip-path: polygon(75% 0, 100% 80%, 22% 100%, 0 26%);
+    clip-path: polygon(75% 0, 100% 80%, 22% 100%, 0 26%);
+  }80%{
+    -webkit-clip-path: polygon(66% 0, 100% 68%, 32% 100%, 0 36%);
+    clip-path: polygon(66% 0, 100% 68%, 32% 100%, 0 36%);
+  }90%{
+    -webkit-clip-path: polygon(58% 0, 100% 58%, 43% 100%, 0 44%);
+    clip-path: polygon(58% 0, 100% 58%, 43% 100%, 0 44%);
+  }100%{
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+}
+
+@keyframes opacidad {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.1;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes crecerAncho3 {
+  0% {
+    width: 0vw;
+  }
+
+  10% {
+    width: 1vw;
+  }
+
+  20% {
+    width: 2vw;
+  }
+
+  30% {
+    width: 3vw;
+  }
+
+  40% {
+    width: 4vw;
+  }
+
+  50% {
+    width: 6vw;
+  }
+
+  60% {
+    width: 8vw;
+  }
+
+  70% {
+    width: 10vw;
+  }
+
+  80% {
+    width: 14vw;
+  }
+
+  90% {
+    width: 17vw;
+  }
+
+  100% {
+    width: 20vw;
+  }
+}
+
+@keyframes crecerAncho4 {
+  0% {
+    width: 0vw;
+  }
+
+  10% {
+    width: 1vw;
+  }
+
+  20% {
+    width: 1.5vw;
+  }
+
+  30% {
+    width: 2vw;
+  }
+
+  40% {
+    width: 2.5vw;
+  }
+
+  50% {
+    width: 3vw;
+  }
+
+  60% {
+    width: 3.5vw;
+  }
+
+  70% {
+    width: 4vw;
+  }
+
+  80% {
+    width: 5vw;
+  }
+
+  90% {
+    width: 6vw;
+  }
+
+  100% {
+    width: 7vw;
+  }
+}
+
+@keyframes bordes {
+  0%{
+    border: 0% 100% 0% 100% / 100% 0% 100% 0%   ;
+  }10%{
+    border-radius:2% 98% 4% 96% / 96% 3% 97% 4%  ;
+  }20%{
+   border-radius: 7% 93% 11% 89% / 90% 7% 93% 10%   ;
+  }30%{
+    border-radius: 11% 89% 15% 85% / 83% 11% 89% 17%    ;
+  }40%{
+    border-radius: 14% 86% 20% 80% / 78% 14% 86% 22%    ;
+  }50%{
+    border-radius: 19% 81% 26% 74% / 73% 18% 82% 27%  ;
+  }60%{
+    border-radius: 14% 86% 20% 80% / 78% 14% 86% 22%  ;
+  }70%{
+    border-radius: 11% 89% 15% 85% / 83% 11% 89% 17%    ;
+  }80%{
+    border-radius: 7% 93% 11% 89% / 90% 7% 93% 10%  ;
+  }90%{
+    border-radius: 2% 98% 4% 96% / 96% 3% 97% 4%   ;
+  }100%{
+    border-radius: 0% 100% 0% 100% / 100% 0% 100% 0%   ;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .fondo{
+    z-index: 2;
+    background-color: wheat;
+    height: 27.8vw;
+    width: 27.8vw;
+    transform: translate(35vw,10vw) rotateX(0deg) rotateY(0deg) rotateZ(10deg) skewX(5deg);
+    animation: rotate1 40s infinite linear;
+    opacity: 0.5;
+    margin-top: 5%;
+  }
+  @keyframes rotate1 {
+    0%{
+      -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }10%{
+      -webkit-clip-path: polygon(58% 0, 100% 58%, 43% 100%, 0 44%);
+      clip-path: polygon(58% 0, 100% 58%, 43% 100%, 0 44%);
+    }20%{
+      -webkit-clip-path: polygon(66% 0, 100% 68%, 32% 100%, 0 36%);
+      clip-path: polygon(66% 0, 100% 68%, 32% 100%, 0 36%);
+    }30%{
+      -webkit-clip-path: polygon(75% 0, 100% 80%, 22% 100%, 0 26%);
+      clip-path: polygon(75% 0, 100% 80%, 22% 100%, 0 26%);
+    }40%{
+      -webkit-clip-path: polygon(87% 0, 100% 89%, 10% 100%, 0 14%);
+      clip-path: polygon(87% 0, 100% 89%, 10% 100%, 0 14%);
+    }50%{
+      -webkit-clip-path: polygon(100% 9%, 94% 100%, 0 89%, 6% 0);
+      clip-path: polygon(100% 9%, 94% 100%, 0 89%, 6% 0);
+    }60%{
+      -webkit-clip-path: polygon(87% 0, 100% 89%, 10% 100%, 0 14%);
+      clip-path: polygon(87% 0, 100% 89%, 10% 100%, 0 14%);
+    }70%{
+      -webkit-clip-path: polygon(75% 0, 100% 80%, 22% 100%, 0 26%);
+      clip-path: polygon(75% 0, 100% 80%, 22% 100%, 0 26%);
+    }80%{
+      -webkit-clip-path: polygon(66% 0, 100% 68%, 32% 100%, 0 36%);
+      clip-path: polygon(66% 0, 100% 68%, 32% 100%, 0 36%);
+    }90%{
+      -webkit-clip-path: polygon(58% 0, 100% 58%, 43% 100%, 0 44%);
+      clip-path: polygon(58% 0, 100% 58%, 43% 100%, 0 44%);
+    }100%{
+      -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+
+  }
+
+.sectionFooter{
+  .fotoJuanda{grid-area: foto;}
+  .nombreJuanda{grid-area: nombre;}
+  .socialMediaJuanda{grid-area: redes;}
+  .footer{
+    display: grid;
+    grid-template-areas:
+    'foto '
+    'nombre '
+    'redes '
+    ;
+    .fotoJuanda{
+      height: 30vw;
+     img{
+      width: 25vw;
+      animation: rotate1 20s linear forwards infinite;
+      }
+    }
+    .nombreJuanda{
+      h4{
+        font-size: 4vw;
+        span{
+          hr{
+            width: 20vw;
+          }
+        }
+      }
+      width: 30vw;
+    }
+    .socialMediaJuanda{
+      p{
+        font-size: 2vw;
+        span{
+          hr{
+            width: 7vw;
+          }
+        }
+      }
+    }
+    transform: translateY(5vw);
+  }
+  height: 80vw;
+}
+
+  @keyframes crecerAnchoMobule3 {
+      0% {
+    width: 0vw;
+  }
+
+  10% {
+    width: 4vw;
+  }
+
+  20% {
+    width: 8vw;
+  }
+
+  30% {
+    width: 12vw;
+  }
+
+  40% {
+    width: 16vw;
+  }
+
+  50% {
+    width: 20vw;
+  }
+
+  60% {
+    width: 24vw;
+  }
+
+  70% {
+    width: 28vw;
+  }
+
+  80% {
+    width: 32vw;
+  }
+
+  90% {
+    width: 36vw;
+  }
+
+  100% {
+    width: 40vw;
+  }
+  }
+  @keyframes crecerAnchoMobule4 {
+    0% {
+  width: 0vw;
+}
+
+10% {
+  width: 1.5vw;
+}
+
+20% {
+  width: 3vw;
+}
+
+30% {
+  width: 4.5vw;
+}
+
+40% {
+  width: 6vw;
+}
+
+50% {
+  width: 7.5vw;
+}
+
+60% {
+  width: 9vw;
+}
+
+70% {
+  width: 10.5vw;
+}
+
+80% {
+  width: 12vw;
+}
+
+90% {
+  width: 13.5vw;
+}
+
+100% {
+  width: 15vw;
+}
+}
+}

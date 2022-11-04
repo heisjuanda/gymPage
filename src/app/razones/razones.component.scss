@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&display=swap');
+
+html,body{
+  padding: 0%;
+  margin: 0%;
+  animation: opacityy 0.2s linear forwards;
+}
+
+.sectionR{
+  .title{
+    text-align: center;
+    h1{
+      font-family: 'Roboto', sans-serif;
+      font-size: 12vw;
+      span{
+        color: darkgray;
+      }
+    }
+  }
+
+  .fotoEntrenador{grid-area: foto;}
+  .table2{grid-area: tabla2;}
+  .table1{
+    display: grid;
+    grid-template-areas:
+    'foto tabla2 '
+    ;
+    .fotoEntrenador{
+      z-index: 1;
+      text-align: center;
+      img{
+        z-index: 2;
+        //border-right: 1vw solid black;
+        width: 50vw;
+        -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        //animation: bordes1 150s linear forwards infinite;
+      }
+    }
+    .razonesA1{grid-area: razones1;}
+    .razonesA2{grid-area: razones2;}
+    .razonesA3{grid-area: razones3;}
+    .a1{grid-area: a1;}
+    .a2{grid-area: a2;}
+    .a3{grid-area: a3;}
+
+    .table2{
+      display: grid;
+      grid-template-areas:
+      'a1 razones1'
+      'a2 razones2'
+      'a3 razones3'
+      ;
+      .a1,.a2,.a3{
+        text-align: start;
+        line-height: 0px;
+        p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 7vw;
+        //text-shadow: 0.3vw 0.3vw 0vw rgba(0, 0, 0, 0.336);
+        }
+       }
+     .razonesA1,.razonesA2,.razonesA3{
+      text-align: left;
+       p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vw;
+        color: black;
+        span{
+          p{
+            font-family: 'Noto Sans Warang Citi', sans-serif;
+            color: gray;
+            font-size: 2vw;
+          }
+        }
+       }
+      }
+    }
+  }
+  height: 110vw;
+}
+
+@keyframes bordes1 {
+ 0%{
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+ }25%{
+  -webkit-clip-path: polygon(100% 50%, 50% 100%, 0 50%, 50% 0);
+  clip-path: polygon(100% 50%, 50% 100%, 0 50%, 50% 0);
+ }50%{
+  -webkit-clip-path: polygon(50% 100%, 0 50%, 50% 0, 100% 50%);
+  clip-path: polygon(50% 100%, 0 50%, 50% 0, 100% 50%);
+ }75%{
+  -webkit-clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+  clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+ }100%{
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+ }
+}
+
+@media screen and (max-width: 800px) {
+
+  @keyframes rotate2 {
+    0%{
+      transform: translate(8.5vw,-52vw) rotateX(10deg) rotateY(10deg) rotateZ(20deg) skewX(10deg);
+    }10%{
+      transform: translate(8.5vw,-52vw)  rotateX(15deg) rotateY(12deg) rotateZ(25deg) skewX(14deg);
+    }20%{
+      transform: translate(8.5vw,-52vw)  rotateX(12deg) rotateY(14deg) rotateZ(15deg) skewX(10deg);
+    }30%{
+      transform:  translate(8.5vw,-52vw)  rotateX(17deg) rotateY(16deg) rotateZ(25deg) skewX(15deg);
+    }40%{
+      transform: translate(8.5vw,-52vw)  rotateX(23deg) rotateY(25deg) rotateZ(40deg) skewX(19deg);
+    }50%{
+      transform: translate(8.5vw,-52vw)  rotateX(30deg) rotateY(43deg) rotateZ(55deg) skewX(24deg);
+    }60%{
+      transform:translate(8.5vw,-52vw) rotateX(24deg) rotateY(30deg) rotateZ(60deg) skewX(15deg);
+    }70%{
+      transform: translate(8.5vw,-52vw)  rotateX(17deg) rotateY(19deg) rotateZ(40deg) skewX(10deg);
+    }80%{
+      transform: translate(8.5vw,-52vw)  rotateX(14deg) rotateY(10deg) rotateZ(30deg) skewX(8deg);
+    }90%{
+      transform: translate(8.5vw,-52vw)  rotateX(8deg) rotateY(5deg) rotateZ(20deg) skewX(10deg);
+    }100%{
+      transform: translate(8.5vw,-52vw) rotateX(10deg) rotateY(10deg) rotateZ(20deg) skewX(10deg);
+    }
+
+  }
+  .sectionR{
+    margin-top: 15vw;
+    .title{
+      h1{
+        font-size: 15vw;
+      }
+    }
+    .table1{
+      .fotoEntrenador{
+        //background-color: black;
+        img{
+          width: 55vw;
+        }
+      }
+      .table2{
+        .a1,.a2,.a3{
+          p{
+          font-size: 9vw;
+          }
+         }
+       .razonesA1,.razonesA2,.razonesA3{
+         p{
+          font-size: 3.5vw;
+          span{
+            p{
+              font-size: 2.5vw;
+            }
+          }
+         }
+        }
+      }
+    }
+    height: 130vw;
+  }
+}
